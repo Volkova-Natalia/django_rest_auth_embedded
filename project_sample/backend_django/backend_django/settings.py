@@ -19,7 +19,7 @@ from distutils.util import strtobool
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-load_dotenv(dotenv_path=BASE_DIR + '/.env')
+load_dotenv(dotenv_path=os.path.join(BASE_DIR, '.env'))
 APPLICATION_ENVIRONMENT = os.getenv('APPLICATION_ENVIRONMENT')
 
 
@@ -52,6 +52,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
 ]
+WORK_STAGE = os.getenv('WORK_STAGE', 'test_before_packaging')
+if WORK_STAGE != "test_before_packaging":
+    INSTALLED_APPS.append('django_rest_auth_embedded')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
