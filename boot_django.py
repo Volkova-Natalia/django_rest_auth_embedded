@@ -24,7 +24,7 @@ def boot_django():
             'django.contrib.messages',
             'django.contrib.staticfiles',
             'rest_framework',
-            "django_rest_auth_embedded",
+            'django_rest_auth_embedded',
         ],
         MIDDLEWARE=[
             'django.middleware.security.SecurityMiddleware',

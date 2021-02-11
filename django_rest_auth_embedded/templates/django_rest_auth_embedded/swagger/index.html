@@ -49,7 +49,23 @@
           SwaggerUIStandalonePreset
         ],
         plugins: [
-          SwaggerUIBundle.plugins.DownloadUrl
+          SwaggerUIBundle.plugins.DownloadUrl,
+
+          // add a plugin to alter spec before it rendered
+          {
+            statePlugins: {
+                spec: {
+                    wrapActions: {
+                        updateJsonSpec: function(oriAction, system) {
+                            return (spec) => {
+                                spec.servers = [{url: "{{base_url}}"}]
+                                return oriAction(spec)
+                            }
+                        }
+                    }
+                }
+            }
+          }
         ],
         layout: "StandaloneLayout"
       })

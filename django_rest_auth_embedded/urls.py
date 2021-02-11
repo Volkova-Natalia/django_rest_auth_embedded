@@ -14,24 +14,21 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import path
-from django.views.generic import TemplateView
-from .settings import app_name, end_point
+from .settings import end_point
 from .views import (
     RegistrationView,
     LoginView,
     LogoutView,
     AuthInfoView,
+
+    SwaggerExpectedView,
 )
 
 urlpatterns = [
-
     path(end_point['registration']['url'], RegistrationView.as_view(), name=end_point['registration']['name']),
     path(end_point['login']['url'], LoginView.as_view(), name=end_point['login']['name']),
     path(end_point['logout']['url'], LogoutView.as_view(), name=end_point['logout']['name']),
     path(end_point['auth_info']['url'], AuthInfoView.as_view(), name=end_point['auth_info']['name']),
 
-    path('swagger/expected/',
-         TemplateView.as_view(template_name=app_name+'/swagger/index.html',
-                              extra_context={'app_name': app_name}),
-         name='swagger-expected'),
+    path(end_point['swagger_expected']['url'], SwaggerExpectedView.as_view(), name=end_point['swagger_expected']['name']),
 ]
