@@ -60,7 +60,7 @@ def boot_django():
                 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
             }
         },
-        AUTH_USER_MODEL='auth.User',
+        AUTH_USER_MODEL='django_rest_auth_embedded.User',
         AUTH_PASSWORD_VALIDATORS=[
             {
                 'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',

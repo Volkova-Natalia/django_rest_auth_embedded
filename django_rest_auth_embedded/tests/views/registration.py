@@ -1,7 +1,7 @@
 from . import CommonViewsTestCase
 from .base import BaseRegistrationViewsTestCase
 
-from django.contrib.auth.models import User
+from ...models import User
 
 from rest_framework.exceptions import ErrorDetail
 

@@ -1,6 +1,6 @@
 from django.test import TestCase
 from ...utils import ClassWithAbstractVariables
-from django.contrib.auth.models import User
+from ...models import User
 
 from ...utils import validate_argument
 
