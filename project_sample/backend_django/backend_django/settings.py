@@ -101,6 +101,9 @@ DATABASES = {
 }
 
 
+if WORK_STAGE != "test_before_packaging":
+    AUTH_USER_MODEL = 'django_rest_auth_embedded.User'
+
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
