@@ -103,7 +103,7 @@ real_django_project/
 ## Testing your separated Application  
 
 ### Bootstrapping Django outside of a Project  
-Now that your app is outside of a Django project, you can not use the Django *manage.py* command to test your application as when the application was a part of *'real_django_project'*.  
+Now that your app is outside of a Django project, you can not use the Django **manage.py** command to test your application as when the application was a part of **real_django_project**.  
 
 You should create sample django project:  
 <details>  
