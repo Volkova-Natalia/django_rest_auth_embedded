@@ -40,7 +40,7 @@ urlpatterns = [
 
 Finally, add the models to your database:  
 ```shell script
-./manage.py makemigrations receipts django_rest_auth_embedded
+./manage.py makemigrations django_rest_auth_embedded
 ```  
 
 <br>
