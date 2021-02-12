@@ -296,6 +296,10 @@ django_rest_auth_embedded/
 <br>
 
 ### Testing your Installable Django Application  
+
+<details>  
+<summary>show actions and commands to test</summary>  
+
 **Install virtualenv**  
 ```shell script
 pip install virtualenv
@@ -364,6 +368,8 @@ Now, you can run tests, perform migrations and apply them, run server by calling
 ```shell script
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: ..\..\test.py
 ``` 
+
+</details>  
 
 <br>
 
@@ -515,6 +521,9 @@ django_rest_auth_embedded/
 <br>
 
 ### Testing your Installable Package  
+<details>  
+<summary>show actions and commands to test</summary>  
+
 You should use new environment. If you have folder *'venv'* in *'path_to_django_rest_auth_embedded\project_sample\backend_django'*, delete it and create new:  
 
 **Install virtualenv**  
@@ -607,6 +616,8 @@ For example, you can run tests:
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: manage.py test
 ``` 
 
+</details>  
+
 <br>
 
 ## Testing multiple versions with tox  
@@ -684,6 +695,9 @@ django_rest_auth_embedded/
 <br>
 
 ### Testing your Installable Package with tox  
+<details>  
+<summary>show actions and commands to test</summary>  
+
 You should use new environment. If you have folder *'venv'* in *'path_to_django_rest_auth_embedded\project_sample\backend_django'*, delete it and create new:  
 
 **Install virtualenv**  
@@ -756,6 +770,8 @@ Now, you can run multiple testing with tox:
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: tox
 ``` 
 
+</details>  
+
 <br>
 
 ## Building your Package  
@@ -768,6 +784,9 @@ This creates a directory called **dist** and builds your new package, **django_r
 <br>
 
 ### Testing your Built Package  
+<details>  
+<summary>show actions and commands to test</summary>  
+
 You should use new environment. If you have folder *'venv'* in *'path_to_django_rest_auth_embedded\project_sample\backend_django'*, delete it and create new:  
 
 **Install virtualenv**  
@@ -867,6 +886,8 @@ For example, you can run tests:
 ```shell script
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: manage.py test
 ``` 
+
+</details>  
 
 <br>
 
