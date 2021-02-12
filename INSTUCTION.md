@@ -258,7 +258,7 @@ def boot_django():
 ### Running management commands with your Installable Django Application
 Now that you have *'boot_django.py'*, you can run any Django management command with a script like this:  
 <details>
-<summary>show 'boot_django.py' code</summary>  
+<summary>show script code</summary>  
 
 ```python
 from django.core.management import call_command
