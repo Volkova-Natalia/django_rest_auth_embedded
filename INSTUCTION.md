@@ -928,7 +928,6 @@ For example, you can run tests:
 
 
 ___
-___
 ## Docs, Articles & Sources
 * <a href=https://snarky.ca/what-the-heck-is-pyproject-toml>What the heck is pyproject.toml?</a>  
 * <a href=https://tox.readthedocs.io/en/latest/>What is tox?</a>  
