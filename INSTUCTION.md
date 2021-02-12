@@ -302,12 +302,11 @@ django_rest_auth_embedded/
 <br>
 
 ### Testing your Installable Django Application  
-
 <details>  
 <summary>show actions and commands to test</summary>  
 
 **Install virtualenv**  
-```shell script
+```
 pip install virtualenv
 ```
 
@@ -316,7 +315,7 @@ Next, you must work from the root directory **backend_django**.
 <br>
 
 **Create a virtual environment**  
-```shell script
+```
 path_to_django_rest_auth_embedded\project_sample\backend_django: virtualenv venv
 ```
 
@@ -324,15 +323,15 @@ path_to_django_rest_auth_embedded\project_sample\backend_django: virtualenv venv
 
 **Activate the virtual environment**  
 For Windows:
-```shell script
+```
 path_to_django_rest_auth_embedded\project_sample\backend_django: venv\Scripts\activate.bat
 ```
 For Linux:  
-```shell script
+```
 path_to_django_rest_auth_embedded\project_sample\backend_django: source venv/bin/activate
 ```
 After the command your command line will look like this:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: $
 ```
 
@@ -340,7 +339,7 @@ After the command your command line will look like this:
 
 **Deactivate the virtual environment**  
 If you want to deactivate the virtual environment, you can use the command:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: deactivate
 ```
 *In general, you should skip this step.*  
@@ -364,14 +363,14 @@ Choose the correct file with requirements for the work stage in the file **requi
 You should choose only **one** file!  
 
 Install all requirements:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: pip install -r requirements.txt
 ```
 
 <br>
 
 Now, you can run tests, perform migrations and apply them, run server by calling appropriate scripts like this:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: ..\..\test.py
 ``` 
 
@@ -538,7 +537,7 @@ django_rest_auth_embedded/
 You should use new environment. If you have folder **venv** in *'path_to_django_rest_auth_embedded\project_sample\backend_django'*, delete it and create new:  
 
 **Install virtualenv**  
-```shell script
+```
 pip install virtualenv
 ```
 
@@ -547,7 +546,7 @@ Next, you must work from the root directory **backend_django**.
 <br>
 
 **Create a virtual environment**  
-```shell script
+```
 path_to_django_rest_auth_embedded\project_sample\backend_django: virtualenv venv
 ```
 
@@ -555,15 +554,15 @@ path_to_django_rest_auth_embedded\project_sample\backend_django: virtualenv venv
 
 **Activate the virtual environment**  
 For Windows:
-```shell script
+```
 path_to_django_rest_auth_embedded\project_sample\backend_django: venv\Scripts\activate.bat
 ```
 For Linux:  
-```shell script
+```
 path_to_django_rest_auth_embedded\project_sample\backend_django: source venv/bin/activate
 ```
 After the command your command line will look like this:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: $
 ```
 
@@ -571,7 +570,7 @@ After the command your command line will look like this:
 
 **Deactivate the virtual environment**  
 If you want to deactivate the virtual environment, you can use the command:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: deactivate
 ```
 *In general, you should skip this step.*  
@@ -595,7 +594,7 @@ Choose the correct file with requirements for the work stage in the file **requi
 You should choose only **one** file!  
 
 Install all requirements:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: pip install -r requirements.txt
 ```
 
@@ -623,7 +622,7 @@ AUTH_USER_MODEL = 'django_rest_auth_embedded.User'
 **Using the Django *manage.py* command**  
 Now, you can make all as in usual django project.  
 For example, you can run tests:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: manage.py test
 ``` 
 
@@ -717,7 +716,7 @@ django_rest_auth_embedded/
 You should use new environment. If you have folder **venv** in *'path_to_django_rest_auth_embedded\project_sample\backend_django'*, delete it and create new:  
 
 **Install virtualenv**  
-```shell script
+```
 pip install virtualenv
 ```
 
@@ -726,7 +725,7 @@ Next, you must work from the root directory **backend_django**.
 <br>
 
 **Create a virtual environment**  
-```shell script
+```
 path_to_django_rest_auth_embedded\project_sample\backend_django: virtualenv venv
 ```
 
@@ -734,15 +733,15 @@ path_to_django_rest_auth_embedded\project_sample\backend_django: virtualenv venv
 
 **Activate the virtual environment**  
 For Windows:
-```shell script
+```
 path_to_django_rest_auth_embedded\project_sample\backend_django: venv\Scripts\activate.bat
 ```
 For Linux:  
-```shell script
+```
 path_to_django_rest_auth_embedded\project_sample\backend_django: source venv/bin/activate
 ```
 After the command your command line will look like this:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: $
 ```
 
@@ -750,7 +749,7 @@ After the command your command line will look like this:
 
 **Deactivate the virtual environment**  
 If you want to deactivate the virtual environment, you can use the command:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: deactivate
 ```
 *In general, you should skip this step.*  
@@ -774,7 +773,7 @@ Choose the correct file with requirements for the work stage in the file **requi
 You should choose only **one** file!  
 
 Install all requirements:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: pip install -r requirements.txt
 ```
 
@@ -782,7 +781,7 @@ Install all requirements:
 
 **Run tox**  
 Now, you can run multiple testing with tox:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: tox
 ``` 
 
@@ -797,7 +796,7 @@ Now, you can run multiple testing with tox:
 ___
 ## Building your Package  
 Using the command:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\: python setup.py sdist
 ```  
 This creates a directory called **dist** and builds your new package, **django_rest_auth_embedded-0.1.tar.gz**.  
@@ -848,7 +847,7 @@ django_rest_auth_embedded/
 You should use new environment. If you have folder **venv** in *'path_to_django_rest_auth_embedded\project_sample\backend_django'*, delete it and create new:  
 
 **Install virtualenv**  
-```shell script
+```
 pip install virtualenv
 ```
 
@@ -857,7 +856,7 @@ Next, you must work from the root directory **backend_django**.
 <br>
 
 **Create a virtual environment**  
-```shell script
+```
 path_to_django_rest_auth_embedded\project_sample\backend_django: virtualenv venv
 ```
 
@@ -865,15 +864,15 @@ path_to_django_rest_auth_embedded\project_sample\backend_django: virtualenv venv
 
 **Activate the virtual environment**  
 For Windows:
-```shell script
+```
 path_to_django_rest_auth_embedded\project_sample\backend_django: venv\Scripts\activate.bat
 ```
 For Linux:  
-```shell script
+```
 path_to_django_rest_auth_embedded\project_sample\backend_django: source venv/bin/activate
 ```
 After the command your command line will look like this:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: $
 ```
 
@@ -881,7 +880,7 @@ After the command your command line will look like this:
 
 **Deactivate the virtual environment**  
 If you want to deactivate the virtual environment, you can use the command:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: deactivate
 ```
 *In general, you should skip this step.*  
@@ -913,7 +912,7 @@ Or, if you committed the source archive and want to work with it:
 You should choose only **one** file!  
 
 Install all requirements:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: pip install -r requirements.txt
 ```
 
@@ -941,7 +940,7 @@ AUTH_USER_MODEL = 'django_rest_auth_embedded.User'
 **Using the Django *manage.py* command**  
 Now, you can make all as in usual django project.  
 For example, you can run tests:  
-```shell script
+```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: manage.py test
 ``` 
 
