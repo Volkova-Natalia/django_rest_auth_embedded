@@ -804,6 +804,43 @@ This creates a directory called **dist** and builds your new package, **django_r
 
 <br>
 
+<details>  
+<summary>show the directory structure</summary>  
+
+```
+django_rest_auth_embedded/
+|
+|__ dist/
+|   |__ django_rest_auth_embedded-0.1.tar.gz
+|
+|__ django_rest_auth_embedded/
+|   |__ ...
+|
+|__ project_sample/
+|   |__ ...
+|
+|__ boot_django.py
+|
+|__ djangoshell.py
+|__ makemigrations.py
+|__ migrate.py
+|__ runserver.py
+|__ test.py
+|
+|__ README.md
+|__ LICENSE
+|
+|__ setup.cfg
+|__ setup.py
+|__ MANIFEST.in
+|__ pyproject.toml
+|
+|__ tox.ini
+```
+</details>  
+
+<br>
+
 ### Testing your Built Package  
 <details>  
 <summary>show actions and commands to test</summary>  
