@@ -47,6 +47,9 @@ And you want to package the **django_rest_auth_embedded** application.
 
 <br>  
 
+
+
+___
 ## Moving your Application out of the Project  
 You should move the **django_rest_auth_embedded** application out of the **real_django_project** project.  
 The directory structure will look something like this:  
@@ -100,6 +103,9 @@ real_django_project/
 <br>  
 
 
+
+
+___
 ## Testing your separated Application  
 
 ### Bootstrapping Django outside of a Project  
@@ -373,6 +379,11 @@ Now, you can run tests, perform migrations and apply them, run server by calling
 
 <br>
 
+
+
+
+
+___
 ## Packaging your Application
 
 ### Add files README.md and LICENSE  
@@ -620,6 +631,11 @@ For example, you can run tests:
 
 <br>
 
+
+
+
+
+___
 ## Testing multiple versions with tox  
 **tox** is a generic virtualenv management and test command line tool.  
 More information see <a href=https://tox.readthedocs.io/en/latest/>documentations</a>  
@@ -774,6 +790,11 @@ Now, you can run multiple testing with tox:
 
 <br>
 
+
+
+
+
+___
 ## Building your Package  
 Using the command:  
 ```shell script
@@ -904,6 +925,10 @@ For example, you can run tests:
 
 <br>
 
+
+
+___
+___
 ## Docs, Articles & Sources
 * <a href=https://snarky.ca/what-the-heck-is-pyproject-toml>What the heck is pyproject.toml?</a>  
 * <a href=https://tox.readthedocs.io/en/latest/>What is tox?</a>  
