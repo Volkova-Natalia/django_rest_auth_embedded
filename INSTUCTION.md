@@ -43,12 +43,12 @@ real_django_project/
 ```
 </details>  
 
-And you want to package the *'django_rest_auth_embedded'* application.  
+And you want to package the **django_rest_auth_embedded** application.  
 
 <br>  
 
 ## Moving your Application out of the Project  
-You should move the *'django_rest_auth_embedded'* application out of the *'real_django_project'* project.  
+You should move the **django_rest_auth_embedded** application out of the **real_django_project** project.  
 The directory structure will look something like this:  
 <details>  
 <summary>show the directory structure</summary>  
@@ -137,7 +137,7 @@ django_rest_auth_embedded/
 
 <br>
 
-Else, you should create a file with configuration of Django *'boot_django.py'*:  
+Else, you should create a file with configuration of Django **boot_django.py**:  
 <details>  
 <summary>show the directory structure</summary>  
 
@@ -256,7 +256,7 @@ def boot_django():
 <br>  
 
 ### Running management commands with your Installable Django Application
-Now that you have *'boot_django.py'*, you can run any Django management command with a script like this:  
+Now that you have **boot_django.py**, you can run any Django management command with a script like this:  
 <details>
 <summary>show script code</summary>  
 
@@ -270,7 +270,7 @@ call_command("makemigrations", "django_rest_auth_embedded")
 ```
 </details>  
 
-You can add the scripts to your folder:  
+You can add the **scripts** to your folder:  
 <details>  
 <summary>show the directory structure</summary>  
 
@@ -444,9 +444,9 @@ test_suite = test.get_suite
 
 <br>
 
-Else, you need a **setup.py** script, which will automatically use your *'setup.cfg'* file.  
+Else, you need a **setup.py** script, which will automatically use your **setup.cfg** file.  
 <details>
-<summary>show 'setup.cfg' code</summary>  
+<summary>show 'setup.py' code</summary>  
 
 ```python
 if __name__ == "__main__":
@@ -524,7 +524,7 @@ django_rest_auth_embedded/
 <details>  
 <summary>show actions and commands to test</summary>  
 
-You should use new environment. If you have folder *'venv'* in *'path_to_django_rest_auth_embedded\project_sample\backend_django'*, delete it and create new:  
+You should use new environment. If you have folder **venv** in *'path_to_django_rest_auth_embedded\project_sample\backend_django'*, delete it and create new:  
 
 **Install virtualenv**  
 ```shell script
@@ -591,7 +591,7 @@ Install all requirements:
 <br>
 
 **Add INSTALLED_APPS**  
-Edit your **settings.py** file to include *'django_rest_auth_embedded'* in the **INSTALLED_APPS** listing:  
+Edit your **settings.py** file to include **django_rest_auth_embedded** in the **INSTALLED_APPS** listing:  
 ```python
 INSTALLED_APPS = [
     ...
@@ -602,7 +602,7 @@ INSTALLED_APPS = [
 <br>
 
 **Define an user model**  
-Specify a custom user model from the *'django_rest_auth_embedded'* application as the default user model for your project using the **AUTH_USER_MODEL** setting in your **settings.py**:  
+Specify a custom user model from the **django_rest_auth_embedded** application as the default user model for your project using the **AUTH_USER_MODEL** setting in your **settings.py**:  
 ```python
 AUTH_USER_MODEL = 'django_rest_auth_embedded.User'
 ```
@@ -628,7 +628,7 @@ Line in file **setup.cfg**
 ```python
 test_suite = test.get_suite
 ```
-tells the package manager to use the *'test.py'* script to get its test suite.  
+tells the package manager to use the **test.py** script to get its test suite.  
 The tox utility uses this to run its tests.  
 
 <br>
@@ -698,7 +698,7 @@ django_rest_auth_embedded/
 <details>  
 <summary>show actions and commands to test</summary>  
 
-You should use new environment. If you have folder *'venv'* in *'path_to_django_rest_auth_embedded\project_sample\backend_django'*, delete it and create new:  
+You should use new environment. If you have folder **venv** in *'path_to_django_rest_auth_embedded\project_sample\backend_django'*, delete it and create new:  
 
 **Install virtualenv**  
 ```shell script
@@ -787,7 +787,7 @@ This creates a directory called **dist** and builds your new package, **django_r
 <details>  
 <summary>show actions and commands to test</summary>  
 
-You should use new environment. If you have folder *'venv'* in *'path_to_django_rest_auth_embedded\project_sample\backend_django'*, delete it and create new:  
+You should use new environment. If you have folder **venv** in *'path_to_django_rest_auth_embedded\project_sample\backend_django'*, delete it and create new:  
 
 **Install virtualenv**  
 ```shell script
@@ -862,7 +862,7 @@ Install all requirements:
 <br>
 
 **Check INSTALLED_APPS**  
-Make sure your **settings.py** file includes *'django_rest_auth_embedded'* in the **INSTALLED_APPS** listing:  
+Make sure your **settings.py** file includes **django_rest_auth_embedded** in the **INSTALLED_APPS** listing:  
 ```python
 INSTALLED_APPS = [
     ...
@@ -873,7 +873,7 @@ INSTALLED_APPS = [
 <br>
 
 **Check an user model**  
-Make sure your default user model in **settings.py** file is a custom user model from the *'django_rest_auth_embedded'*:  
+Make sure your default user model in **settings.py** file is a custom user model from the **django_rest_auth_embedded**:  
 ```python
 AUTH_USER_MODEL = 'django_rest_auth_embedded.User'
 ```
