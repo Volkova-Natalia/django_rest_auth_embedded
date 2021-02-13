@@ -1004,6 +1004,10 @@ Or you can use script **test_after_building_local.py** instead all commands:
 ```
 path_to_django_rest_auth_embedded: test_after_building_local.py
 ```
+Or, if you committed the source archive and want to work with it, you can use script **test_after_building_commit.py** instead all commands:  
+```
+path_to_django_rest_auth_embedded: test_after_building_commit.py
+```  
 It is not exclude editing your **settings.py** file to include **django_rest_auth_embedded** in the **INSTALLED_APPS** listing:  
 ```python
 INSTALLED_APPS = [
@@ -1018,6 +1022,10 @@ AUTH_USER_MODEL = 'django_rest_auth_embedded.User'
 It is not exclude choosing the correct work stage in the file **.env**:  
 ```python
 WORK_STAGE = "work_after_building_local" 
+```
+Or, if you committed the source archive and want to work with it:  
+```python
+WORK_STAGE = "work_after_building_commit" 
 ```
 
 <br>
