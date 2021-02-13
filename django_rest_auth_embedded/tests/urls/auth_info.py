@@ -23,9 +23,6 @@ class AuthInfoUrlsTestCase(BaseUrlsTestCase):
 
     # ======================================================================
 
-    def test_base_url(self):
-        self.base_test_base_url(assert_message=self.assert_message)
-
     def test_url(self):
         self.base_test_url(assert_message=self.assert_message)
 

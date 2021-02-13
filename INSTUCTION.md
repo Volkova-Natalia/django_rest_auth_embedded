@@ -625,6 +625,10 @@ For example, you can run tests:
 ```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: manage.py test
 ``` 
+Or so:  
+```
+(venv) path_to_django_rest_auth_embedded\project_sample\backend_django: manage.py test django_rest_auth_embedded
+``` 
 
 </details>  
 
@@ -942,6 +946,10 @@ Now, you can make all as in usual django project.
 For example, you can run tests:  
 ```
 (venv) path_to_django_rest_auth_embedded\project_sample\backend_django: manage.py test
+``` 
+Or so:  
+```
+(venv) path_to_django_rest_auth_embedded\project_sample\backend_django: manage.py test django_rest_auth_embedded
 ``` 
 
 </details>  

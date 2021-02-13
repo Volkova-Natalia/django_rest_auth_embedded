@@ -2,13 +2,14 @@ from django.test import TestCase
 from ...utils import ClassWithAbstractVariables
 from django.urls import reverse, resolve
 
-from ...settings import app_name, base_url
+from ...settings import app_name
+from ...utils import get_namespace, get_base_url
 
 
 # Create your tests here.
 class BaseUrlsTestCase(TestCase,
                        ClassWithAbstractVariables):
-    base_url_expected = '/'
+    base_url_expected = get_base_url()
 
     url_args = []
 
@@ -32,12 +33,14 @@ class BaseUrlsTestCase(TestCase,
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
+        namespace = get_namespace()
+
         self.url_expected = self.base_url_expected + self.path
         self.view_expected = self.end_point_name
         self.func_expected = \
             app_name + '.' + 'views.' + self.view_unit_name + '.' + self.class_name
 
-        self.url = reverse(self.end_point_name, args=self.url_args)
+        self.url = reverse(namespace + self.end_point_name, args=self.url_args)
         self.view = resolve(self.url).view_name
         self.func = resolve(self.url)._func_path
 
@@ -61,12 +64,6 @@ class BaseUrlsTestCase(TestCase,
         super().tearDown()
 
     # ======================================================================
-
-    def base_test_base_url(self, *, assert_message=''):
-        # print('\nbase_url_expected  ', self.base_url_expected)
-        # print('base_url           ', base_url)
-        self.assertEquals(base_url, self.base_url_expected, assert_message + ' test base_url')
-        pass
 
     def base_test_url(self, *, assert_message=''):
         # print('\nurl_expected  ', self.url_expected)
