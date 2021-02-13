@@ -378,6 +378,17 @@ Now, you can run tests, perform migrations and apply them, run server by calling
 
 <br>
 
+Or you can use script **test_before_packaging.py** instead all commands:
+```
+path_to_django_rest_auth_embedded: test_before_packaging.py
+```  
+It is not exclude choosing the correct work stage in the file **.env**:  
+```python
+WORK_STAGE = "test_before_packaging" 
+```
+
+<br>
+
 
 
 
@@ -634,6 +645,28 @@ Or so:
 
 <br>
 
+Or you can use script **test_after_packaging.py** instead all commands:
+```
+path_to_django_rest_auth_embedded: test_after_packaging.py
+```
+It is not exclude editing your **settings.py** file to include **django_rest_auth_embedded** in the **INSTALLED_APPS** listing:  
+```python
+INSTALLED_APPS = [
+    ...
+    'django_rest_auth_embedded',
+]
+```   
+It is not exclude specifying a custom user model from the **django_rest_auth_embedded** application as the default user model for your project using the **AUTH_USER_MODEL** setting in your **settings.py**:  
+```python
+AUTH_USER_MODEL = 'django_rest_auth_embedded.User'
+```
+It is not exclude choosing the correct work stage in the file **.env**:  
+```python
+WORK_STAGE = "test_after_packaging" 
+```
+
+<br>
+
 
 
 
@@ -790,6 +823,17 @@ Now, you can run multiple testing with tox:
 ``` 
 
 </details>  
+
+<br>
+
+Or you can use script **test_after_packaging_with_tox.py** instead all commands:
+```
+path_to_django_rest_auth_embedded: test_after_packaging_with_tox.py
+```
+It is not exclude choosing the correct work stage in the file **.env**:  
+```python
+WORK_STAGE = "test_after_packaging_with_tox" 
+```
 
 <br>
 
@@ -953,6 +997,28 @@ Or so:
 ``` 
 
 </details>  
+
+<br>
+
+Or you can use script **test_after_building_local.py** instead all commands:
+```
+path_to_django_rest_auth_embedded: test_after_building_local.py
+```
+It is not exclude editing your **settings.py** file to include **django_rest_auth_embedded** in the **INSTALLED_APPS** listing:  
+```python
+INSTALLED_APPS = [
+    ...
+    'django_rest_auth_embedded',
+]
+```   
+It is not exclude specifying a custom user model from the **django_rest_auth_embedded** application as the default user model for your project using the **AUTH_USER_MODEL** setting in your **settings.py**:  
+```python
+AUTH_USER_MODEL = 'django_rest_auth_embedded.User'
+```
+It is not exclude choosing the correct work stage in the file **.env**:  
+```python
+WORK_STAGE = "work_after_building_local" 
+```
 
 <br>
 
