@@ -13,7 +13,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.7, 3.8, 3.9]
+        python-version: [3.6, 3.7, 3.8, 3.9]
 
     steps:
     - uses: actions/checkout@v2
@@ -27,7 +27,7 @@ jobs:
         pip install -r project_sample/backend_django/requirements/test_before_packaging.txt
     - name: Run Tests
       run: |
-        test.py
+        python test.py
       env:
           APPLICATION_ENVIRONMENT: "testing"
           WORK_STAGE: "test_before_packaging"
