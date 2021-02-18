@@ -1,5 +1,15 @@
 # django_rest_auth_embedded  
-Packaged rest application to work with django embedded authentication.  
+The application realizes django embedded authentication.   
+It is REST application. There are not templates.  
+
+The application uses the following endpoints:  
+***/registration/***  
+***/login/***  
+***/logout/***  
+***/auth-info/*** - to check, the user is authenticated or not  
+***/swagger/expected/*** - OpenApi specification of the application  
+
+More information about the endpoints see ***/swagger/expected/***  
 
 <br>
 
@@ -43,17 +53,3 @@ Finally, add the models to your database:
 ./manage.py makemigrations django_rest_auth_embedded
 ```  
 
-<br>
-
-## More information about the application  
-The application realizes django embedded authentication.   
-It is REST application. There are not templates.  
-
-The application uses the following endpoints:  
-***/registration/***  
-***/login/***  
-***/logout/***  
-***/auth-info/*** - to check, the user is authenticated or not  
-***/swagger/expected/*** - OpenApi specification of the application  
-
-More information about the endpoints see ***/swagger/expected/***  
