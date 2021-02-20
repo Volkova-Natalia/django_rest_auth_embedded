@@ -1,5 +1,7 @@
 from . import BaseViewsTestCase
 
+from ....utils import get_namespace
+
 from rest_framework import status
 from rest_framework.exceptions import ErrorDetail
 from django.urls import reverse
@@ -7,9 +9,11 @@ from django.urls import reverse
 
 # Create your tests here.
 class BaseLogoutViewsTestCase(BaseViewsTestCase):
+    end_point_name = 'logout'
     user = None
 
-    url = reverse('logout')
+    namespace = get_namespace()
+    url = reverse(namespace + end_point_name)
 
     status_code_expected = {
         'get': {
@@ -93,11 +97,11 @@ class BaseLogoutViewsTestCase(BaseViewsTestCase):
     # ======================================================================
 
     def base_test_get(self, *, response, success_fail, assert_message=''):
-        assert_message = assert_message + ' logout'
+        assert_message = assert_message + ' ' + self.end_point_name
         super().base_test_get(response=response, success_fail=success_fail, assert_message=assert_message)
 
     def base_test_post(self, *, response, success_fail, assert_message=''):
-        assert_message = assert_message + ' logout'
+        assert_message = assert_message + ' ' + self.end_point_name
         super().base_test_post(response=response, success_fail=success_fail, assert_message=assert_message)
 
         if success_fail == 'success':
@@ -113,11 +117,11 @@ class BaseLogoutViewsTestCase(BaseViewsTestCase):
             # TODO check that the user is online
 
     def base_test_put(self, *, response, success_fail, assert_message=''):
-        assert_message = assert_message + ' logout'
+        assert_message = assert_message + ' ' + self.end_point_name
         super().base_test_put(response=response, success_fail=success_fail, assert_message=assert_message)
 
     def base_test_delete(self, *, response, success_fail, assert_message=''):
-        assert_message = assert_message + ' logout'
+        assert_message = assert_message + ' ' + self.end_point_name
         super().base_test_delete(response=response, success_fail=success_fail, assert_message=assert_message)
 
     # ======================================================================

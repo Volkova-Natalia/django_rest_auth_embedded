@@ -22,5 +22,5 @@ urlpatterns = [
 ]
 
 if WORK_STAGE != "test_before_packaging":
-    # urlpatterns.append(path('auth/', include(('django_rest_auth_embedded.urls', 'django_rest_auth_embedded'), namespace='auth')))
-    urlpatterns.append(path('auth/', include('django_rest_auth_embedded.urls')))
+    urlpatterns.append(path('auth/', include(('django_rest_auth_embedded.urls', 'django_rest_auth_embedded'), namespace='auth')))
+    # urlpatterns.append(path('auth/', include('django_rest_auth_embedded.urls')))

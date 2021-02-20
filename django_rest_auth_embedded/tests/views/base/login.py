@@ -1,5 +1,7 @@
 from . import BaseViewsTestCase
 
+from ....utils import get_namespace
+
 from rest_framework import status
 from rest_framework.exceptions import ErrorDetail
 from django.contrib.auth import authenticate
@@ -8,9 +10,11 @@ from django.urls import reverse
 
 # Create your tests here.
 class BaseLoginViewsTestCase(BaseViewsTestCase):
+    end_point_name = 'login'
     user = None
 
-    url = reverse('login')
+    namespace = get_namespace()
+    url = reverse(namespace + end_point_name)
 
     status_code_expected = {
         'get': {
@@ -96,11 +100,11 @@ class BaseLoginViewsTestCase(BaseViewsTestCase):
     # ======================================================================
 
     def base_test_get(self, *, response, success_fail, assert_message=''):
-        assert_message = assert_message + ' login'
+        assert_message = assert_message + ' ' + self.end_point_name
         super().base_test_get(response=response, success_fail=success_fail, assert_message=assert_message)
 
     def base_test_post(self, *, response, success_fail, assert_message=''):
-        assert_message = assert_message + ' login'
+        assert_message = assert_message + ' ' + self.end_point_name
         super().base_test_post(response=response, success_fail=success_fail, assert_message=assert_message)
 
         if success_fail == 'success':
@@ -116,11 +120,11 @@ class BaseLoginViewsTestCase(BaseViewsTestCase):
                     # TODO check that the user is offline
 
     def base_test_put(self, *, response, success_fail, assert_message=''):
-        assert_message = assert_message + ' login'
+        assert_message = assert_message + ' ' + self.end_point_name
         super().base_test_put(response=response, success_fail=success_fail, assert_message=assert_message)
 
     def base_test_delete(self, *, response, success_fail, assert_message=''):
-        assert_message = assert_message + ' login'
+        assert_message = assert_message + ' ' + self.end_point_name
         super().base_test_delete(response=response, success_fail=success_fail, assert_message=assert_message)
 
     # ======================================================================
