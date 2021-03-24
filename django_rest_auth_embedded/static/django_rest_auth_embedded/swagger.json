@@ -107,11 +107,7 @@
           "200": {
             "description": "User logged in",
             "content": {
-              "application/json;charset=utf-8": {
-                "schema": {
-                  "$ref": "#/components/schemas/user_login_response"
-                }
-              }
+              "application/json;charset=utf-8": {}
             }
           },
           "400": {
@@ -161,11 +157,7 @@
           "200": {
             "description": "User logged out",
             "content": {
-              "application/json;charset=utf-8": {
-                "schema": {
-                  "$ref": "#/components/schemas/user_logout_response"
-                }
-              }
+              "application/json;charset=utf-8": {}
             }
           },
           "401": {
@@ -300,56 +292,16 @@
       "user_registration_response": {
         "type": "object",
         "properties": {
-          "username": {
-            "$ref": "#/components/schemas/user/properties/username"
-          },
-          "password": {
-            "$ref": "#/components/schemas/user/properties/password"
-          },
-          "last_login": {
-            "$ref": "#/components/schemas/user/properties/last_login"
+          "id": {
+            "$ref": "#/components/schemas/user/properties/id"
           }
         },
         "required": [
-          "username",
-          "password",
-          "last_login"
+          "id"
         ]
       },
 
       "user_login_request": {
-        "type": "object",
-        "properties": {
-          "username": {
-            "$ref": "#/components/schemas/user/properties/username"
-          },
-          "password": {
-            "$ref": "#/components/schemas/user/properties/password"
-          }
-        },
-        "required": [
-          "username",
-          "password"
-        ]
-      },
-
-      "user_login_response": {
-        "type": "object",
-        "properties": {
-          "username": {
-            "$ref": "#/components/schemas/user/properties/username"
-          },
-          "password": {
-            "$ref": "#/components/schemas/user/properties/password"
-          }
-        },
-        "required": [
-          "username",
-          "password"
-        ]
-      },
-
-      "user_logout_response": {
         "type": "object",
         "properties": {
           "username": {
